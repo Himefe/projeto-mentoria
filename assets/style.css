@@ -5,6 +5,7 @@
 }
 
 body {
+  box-sizing: border-box;
   background: rgb(242, 242, 242);
 }
 
@@ -42,7 +43,10 @@ a, ul, li  {
 .principal {
   background: url("https://forja.danielbragadesigner.com.br/wp-content/uploads/2021/01/eventslider4-min.png") no-repeat center center;
   background-size: cover;
-  height: calc(100vh - 40px)
+}
+
+.section-1, .section-2, .section-3, .section-4, .section-5, .section-6, .section-7, .section-8 {
+  width: 100%;
 }
 
 .overlay {
@@ -58,7 +62,7 @@ a, ul, li  {
   align-items: center;
   color: #FFF;
   justify-content: center;
-  height: calc(100vh - 40px);
+  height: 100%;
   font-family: "Lato", sans-serif;
 }
 
@@ -160,7 +164,7 @@ a, ul, li  {
 }
 
 .imagem_section-1 {
-  width: 490px;
+  max-width: 490px;
 }
 
 .div-lista {
@@ -194,7 +198,7 @@ a, ul, li  {
 
 .section-2 {
   margin-bottom: 50px;
-  height: calc(100vh);
+  height: auto;
 }
 
 .section-2_title {
@@ -375,7 +379,7 @@ a, ul, li  {
 
 .slide-1, .slide-2 {
   margin-right: 20px;
-  width: 582px;
+  max-width: 582px;
 }
 
 .slide-desc p {
@@ -412,6 +416,11 @@ a, ul, li  {
   text-transform: uppercase;
 }
 
+.titulo-1, .titulo-2 {
+  flex: 1;
+}
+
+
 .overlay-section-4 .titulo-1 h1, .overlay-section-4 .titulo-2 h1 {
   margin-bottom: 10px;
 }
@@ -435,7 +444,7 @@ a, ul, li  {
 }
 
 .overlay-section-4 .row:nth-last-of-type(1n + 1) {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 .garantir_vaga {
@@ -499,7 +508,7 @@ a, ul, li  {
 }
 
 .section-5 .container {
-  width: 1140px;
+  max-width: 1140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -633,4 +642,264 @@ a, ul, li  {
 
 .satisfacao-desc p:first-child {
   margin-bottom: 30px;
+}
+
+.section-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-7_img, .section-7_about {
+  flex: 1;
+  padding: 90px 60px;
+}
+
+.section-7_about {
+  margin-top: 50px;
+}
+
+.section-7_about h3 {
+  color: #FF9C00;
+  font-family: "Lato", Sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.section-7_about h1 {
+  color: #252525;
+  font-family: "Lato", Sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.about_desc {
+  margin-top: 30px;
+}
+
+.about_desc p {
+  color: #252525;
+  font-family: "Lato", Sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.section-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0;
+}
+
+.section-8_title h3 {
+  color: #FF9C00;
+  font-family: "Lato", Sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.section-8_title h1 {
+  color: #252525;
+  font-family: "Lato", Sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.section-8 .container {
+  flex-direction: column;
+}
+
+
+
+dt.active {
+  color: #df8901;
+}
+
+dd.active {
+  display: flex;
+  animation: accordion .3s forwards;
+}
+
+dd {
+  transition: all .5s ease-in-out;
+  display: none;
+  color: #252525;
+  font-family: "Lato", Sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 10px 20px;
+  word-wrap: anywhere;
+}
+
+dt {
+  display: flex;
+  align-items: center;
+  font-family: "Lato", Sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 10px 20px;
+  cursor: pointer;
+  
+}
+
+dt::before {
+    content: "";
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid black;
+    transition: transform .3s ease-in-out;
+}
+
+dt.active::before {
+  transform: rotate(-90deg);
+}
+
+.accordion {
+  border-bottom: 2px solid #CCC;
+}
+
+
+@keyframes accordion {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+/* //// Responsividade */
+
+@media only screen and (max-width: 767px) {
+  .produto_promessa {
+    font-size: 2em;
+  }
+
+  .produto_nome {
+    text-align: center;
+  }
+
+  .cadastrar a {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-1 {
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .cadastrar {
+    width: auto;
+  }
+
+  .descricao_titulo h1 {
+    font-size: 2em;
+  }
+
+  .div-lista {
+    font-size: 1em;
+  }
+
+  .section-3 .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide-1, .slide-2 {
+    margin-right: 0;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .garantir_desc h1 {
+    font-size: 1.25em;
+  }
+
+  .garantir_vaga .vaga_container {
+    width: 90%;
+    padding: 20px 30px;
+    top: -88px;
+  }
+
+  .section-4 .row {
+    flex-direction: column;
+  }
+
+  .overlay-section-4 .container {
+    margin-top: 150px;
+  }
+
+  .titulo-1 {
+    margin-bottom: 50px;
+  }
+
+  .list-card {
+    flex-direction: column;
+  }
+
+  .card_list {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .section-5 {
+    margin-bottom: 90px;
+  }
+  
+  .section-6 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-7 .container {
+    flex-direction: column;
+  }
+
+  .section-7_img, .section-7_about {
+    padding: 0;
+  }
+
+  .section-7_about h1 {
+    font-size: 2em;
+  }
+
+  .section-8_title h1 {
+    font-size: 2em;
+  }
+
+  dt {
+    padding: 10px;
+  }
+  
+  dl {
+    margin-top: 20px;
+  }
+
+  .garantir_price_title h2 {
+    font-size: 2.3em;
+  }
+
+  .garantir_price_title .section-6_price {
+    font-size: 1.5em;
+  }
+  
 }
