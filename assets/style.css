@@ -382,6 +382,7 @@ a, ul, li  {
 .slide-1, .slide-2 {
   margin-right: 20px;
   max-width: 582px;
+  flex: 1;
 }
 
 .slide-desc p {
@@ -391,12 +392,29 @@ a, ul, li  {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.slide-1, .slide-2{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-wrapper {
+  height: 100%;
+  display: flex;
+  transition: all ease 0.3s;
+}
+
+.slide {
+  
+  
+}
+
 .section-4 {
   background-color: #161616;
   background-image: url(https://forja.danielbragadesigner.com.br/wp-content/uploads/2021/01/alexandre-pellaes-6vAjp0pscX0-unsplash.jpg);
   background-size: cover;
   position: relative;
   background-attachment: fixed;
+  position: relative;
 }
 
 .section-4 .container {
@@ -929,6 +947,11 @@ dt.active::before {
 
   .section-3 .container {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .slide-1, .slide-2 {
+    margin-right: 0;
   }
 
   .container {
