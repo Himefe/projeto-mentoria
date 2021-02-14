@@ -53,7 +53,7 @@ a, ul, li  {
   background-color: #0A0A0A;
   opacity: 0.95;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-  height: calc(100vh - 40px);
+  height: 100vh;
 }
 
 .titles {
@@ -93,11 +93,12 @@ a, ul, li  {
 .cadastrar {
   display: flex;
   max-width: 456px;
+  width: 456px;
   justify-content: center;
 }
 
 .cadastrar a {
-  padding: 20px;
+  padding: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
