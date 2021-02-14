@@ -751,6 +751,40 @@ a, ul, li  {
   flex-direction: column;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+
+footer .lista_footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+}
+
+.lista_footer li a {
+  color: #FFFFFF;
+  font-family: "Lato", Sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  padding: 5px;
+}
+
+.lista_footer li {
+  margin-right: 15px;
+}
+
+.lista_footer li a:last-child {
+  margin-right: 0;
+}
+
 
 
 dt.active {
