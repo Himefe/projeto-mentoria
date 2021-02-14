@@ -764,7 +764,7 @@ footer .lista_footer {
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 70px;
+  height: 180px;
 }
 
 .lista_footer li a {
@@ -892,6 +892,15 @@ dt.active::before {
     align-items: center;
   }
 
+  .section-6 .section-6_right, .section-6 .section-6_left {
+    padding: 90px 30px;
+  }
+
+  footer .lista_footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .slide-1, .slide-2 {
     margin-right: 0;
   }
@@ -993,6 +1002,7 @@ dt.active::before {
   .slide-1, .slide-2 {
     margin-right: 0;
   }
+
 
   .container {
     width: 90%;
