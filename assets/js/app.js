@@ -27,8 +27,7 @@ const slideWrapper2 = document.querySelector(".slide-2 .slide-wrapper");
 const slideFilho2 = document.querySelectorAll(".slide-2 .slide-wrapper .slide");
 let totalSlide2 = slideFilho2.length;
 let currentSlide2 = 0;
-console.log(slideFilho2);
-console.log(slidePai1.clientWidth);
+
 
 
 const atualizaDimensoes = () => {
@@ -39,9 +38,6 @@ const atualizaDimensoes = () => {
   // Dimensões slide 2
 
   slideWrapper2.style.width = `${slidePai1.clientWidth * slideFilho2.length - 1}px`;
-
-  console.log(slideWrapper2.style.width);
-
 
 
   slideFilho1.forEach((filho) => {
@@ -55,7 +51,6 @@ const atualizaDimensoes = () => {
 
 setInterval(() => {
   nextSlide();
-  console.log(currentSlide2);
 }, 3000);
 
 
