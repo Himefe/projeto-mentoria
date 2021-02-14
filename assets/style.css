@@ -652,6 +652,17 @@ a, ul, li  {
   align-items: center;
 }
 
+.midias {
+  display: flex;
+  margin-top: 15px;
+}
+
+.midias a {
+  color: #FF9C00;
+  margin-right: 15px;
+  font-size: 1.3em;
+}
+
 .section-7_img, .section-7_about {
   flex: 1;
   padding: 90px 60px;
