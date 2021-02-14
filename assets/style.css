@@ -92,13 +92,15 @@ a, ul, li  {
 
 .cadastrar {
   display: flex;
-  width: 40%;
   max-width: 456px;
   justify-content: center;
 }
 
 .cadastrar a {
-  padding: 25px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #FF9C00;
   flex: 1;
   border: none;
@@ -782,7 +784,7 @@ dt.active::before {
   }
 }
 
-/* //// Responsividade */
+/* //// Responsividade Celular */
 
 @media only screen and (max-width: 767px) {
   .produto_promessa {
@@ -901,5 +903,48 @@ dt.active::before {
   .garantir_price_title .section-6_price {
     font-size: 1.5em;
   }
-  
+}
+
+/* //// Responsividade táblet */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .produto_promessa {
+    font-size: 3em;
+  }
+
+  .section-1 {
+    padding: 30px;
+  }
+
+  .section-3 .container {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .row .titulo-1 {
+    margin-right: 65px;
+  }
+
+  .card_list:last-child {
+    margin-right: 0;
+  }
+
+  .section-6 {
+    flex-direction: column;
+  }
+
+  .section-7_img, .section-7_about {
+    padding: 90px 10px;
+  }
+
+  .section-7_about h1 {
+    font-size: 2.2em;
+  }
+
+  .imagem_section-1 {
+    flex: 1;
+  }
 }
