@@ -10,7 +10,7 @@ const toggle = (item) => {
 
 elementos.forEach((elemento) => {
   elemento.addEventListener("click", () => toggle(elemento));
-});
+}); 
 
 
 
